@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Controlling Uncertainty and Hallucination Risk in Multi-Agent Fact Verification &mdash; UAI 2026</title>
+
+<meta name="description" content="UAI 2026 paper by Adam Kostka and Jaroslaw A. Chudziak, Warsaw University of Technology. Score Deviation and Learn-Then-Test calibration for bounding the expected false discovery rate in multi-agent fact verification.">
+<meta name="author" content="Adam Kostka, Jaroslaw A. Chudziak">
+<meta name="theme-color" content="#1a3a5c">
+<link rel="canonical" href="https://feilaz.github.io/uai2026/">
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="Controlling Uncertainty and Hallucination Risk in Multi-Agent Fact Verification">
+<meta property="og:description" content="UAI 2026. Adam Kostka, Jaroslaw A. Chudziak. Warsaw University of Technology.">
+<meta property="og:url" content="https://feilaz.github.io/uai2026/">
+<meta name="twitter:card" content="summary">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<main>
+
+  <header>
+    <p class="venue">
+      42nd Conference on Uncertainty in Artificial Intelligence (UAI 2026)<br>
+      Amsterdam, Netherlands &middot; 17&ndash;21 August 2026
+    </p>
+
+    <h1>Controlling Uncertainty and Hallucination Risk in Multi-Agent Fact Verification</h1>
+
+    <p class="authors">Adam Kostka &middot; Jaros&#322;aw A. Chudziak</p>
+
+    <p class="affiliation">
+      Faculty of Electronics and Information Technology,<br>
+      Warsaw University of Technology, Poland
+    </p>
+  </header>
+
+  <!-- Primary links: kept immediately below the title so they are the first
+       thing visible to someone arriving from the poster QR code on a phone. -->
+  <nav class="links" aria-label="Paper and poster">
+    <a class="btn btn-primary" href="https://proceedings.mlr.press/v337/kostka26a.html">
+      <span class="btn-label">Paper</span>
+      <span class="btn-sub">PMLR v337, pages 3143&ndash;3161</span>
+    </a>
+    <a class="btn btn-secondary" href="poster.pdf">
+      <span class="btn-label">Poster (PDF)</span>
+      <span class="btn-sub">A0, 277&nbsp;KB</span>
+    </a>
+  </nav>
+  <!-- To add a code link later, copy one of the blocks above into this nav:
+  <a class="btn btn-secondary" href="https://github.com/feilaz/REPO-NAME">
+    <span class="btn-label">Code</span>
+    <span class="btn-sub">Experiments and calibration</span>
+  </a>
+  -->
+
+  <section aria-labelledby="overview-heading">
+    <h2 id="overview-heading">How should uncertainty be measured in multi-agent fact verification?</h2>
+    <p>
+      Multi-agent systems can combine responses from several agents to the same
+      grounded query. The relationship between agreement among those responses
+      and factual reliability may be more complex than a direct correspondence.
+      Alignment among complete responses and variation in claim support scores
+      are therefore examined as complementary signals for selecting claims under
+      a risk constraint.
+    </p>
+    <p class="source-note">Text above from the conference poster.</p>
+  </section>
+
+  <section aria-labelledby="abstract-heading">
+    <h2 id="abstract-heading">Abstract</h2>
+    <p>
+      Multi-agent language systems are increasingly relied upon for high-stakes
+      decision support. Many systems use consensus among agents as a measure of
+      confidence. However, such a model is prone to failure if aligned agents
+      have the same biases and propagate the same error. Under sycophantic
+      consensus, correlated errors resemble strong agreement, and hallucination
+      manifests as a consequence of uncalibrated uncertainty. While current
+      measures provide useful heuristics, they lack statistical safety bounds at
+      deployment time. This work reinterprets hallucination control as an
+      uncertainty quantification problem. We contribute a Score Deviation
+      penalty that directly lowers confidence when the factual disagreement
+      within the ensemble rises. A Learn-Then-Test calibration procedure
+      converts these penalized scores into a certified decision threshold that
+      provably bounds the expected False Discovery Rate. The results show that
+      this deviation-penalized method reduces the conservatism of the
+      calibration process, achieving 71.7% recall compared to 47.4% for naive
+      baselines at a strict 2% risk budget.
+    </p>
+    <p class="source-note">Abstract as published in PMLR v337.</p>
+  </section>
+
+  <section aria-labelledby="contact-heading">
+    <h2 id="contact-heading">Contact</h2>
+    <p>
+      Adam Kostka<br>
+      <a href="mailto:adam.kostka.stud@pw.edu.pl">adam.kostka.stud@pw.edu.pl</a>
+    </p>
+  </section>
+
+  <section aria-labelledby="cite-heading">
+    <h2 id="cite-heading">Citation</h2>
+    <pre><code>@InProceedings{pmlr-v337-kostka26a,
+  title     = {Controlling Uncertainty and Hallucination Risk in
+               Multi-Agent Fact Verification},
+  author    = {Kostka, Adam and Chudziak, Jaroslaw A.},
+  booktitle = {Proceedings of the 42nd Conference on Uncertainty in
+               Artificial Intelligence},
+  pages     = {3143--3161},
+  year      = {2026},
+  editor    = {Perkovi&#263;, Emilija and Malinsky, Daniel},
+  volume    = {337},
+  series    = {Proceedings of Machine Learning Research},
+  month     = {17--21 Aug},
+  publisher = {PMLR},
+  url       = {https://proceedings.mlr.press/v337/kostka26a.html}
+}</code></pre>
+  </section>
+
+  <footer>
+    <p>
+      &copy; 2026 Adam Kostka and Jaros&#322;aw A. Chudziak.
+      Paper published by PMLR.
+    </p>
+  </footer>
+
+</main>
+
+</body>
+</html>
